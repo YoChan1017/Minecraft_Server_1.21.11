@@ -1,0 +1,244 @@
+# TimberPlus Plugin Configuration
+version: 1.0.0
+
+# Mini Game Settings
+mini-game:
+  # Ok hareket hızı (tick cinsinden)
+  arrow-speed: 10 # 0.5 saniye = 10 tick
+  
+  # Yeşil alan genişliği
+  target-width: 5
+  
+  # Oyun süresi (saniye)
+  time-limit: 10
+  
+  # Başarı için gerekli doğru sayısı
+  required-success: 3
+  
+  # Başarısızlık sonrası cooldown (saniye)
+  failure-cooldown: 5
+  
+  # Mini game UI karakterleri
+  ui:
+    background: ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ # 15 karakter
+    target-area: ░░░░░ # 5 karakter (yeşil)
+    arrow: ►
+
+# Ağaç Kırma Ayarları
+tree-cutting:
+  # Maksimum ağaç yüksekliği
+  max-tree-height: 50
+  
+  # Maksimum kırılacak log sayısı
+  max-logs-per-cut: 64
+  
+  # Yaprakları da kır
+  break-leaves: true
+  
+  # Yaprak kırılınca balta hasar alsın mı
+  leaves-damage-axe: false
+  
+  # Fidan dikme ayarları
+  replant:
+    enabled: true
+    require-sapling: false
+  
+  # Desteklenen ağaç türleri
+  supported-trees:
+  - OAK_LOG
+  - BIRCH_LOG
+  - SPRUCE_LOG
+  - JUNGLE_LOG
+  - ACACIA_LOG
+  - DARK_OAK_LOG
+  - CHERRY_LOG
+  - MANGROVE_LOG
+  - CRIMSON_STEM
+  - WARPED_STEM
+  
+  # Ağaç algılama ayarları
+  detection:
+    # Maksimum yatay mesafe
+    max-horizontal-distance: 3
+    # Maksimum dikey mesafe
+    max-vertical-distance: 50
+    # Yaprak bloklarını kontrol et
+    check-leaves: true
+    # Yaprak zorunluluğu (ağaç olarak kabul için yaprak gerekli mi)
+    require-leaves: true
+    # Minimum ağaç boyutu
+    min-tree-size: 3
+    # Maksimum ağaç boyutu
+    max-tree-size: 200
+    # Diagonal bağlantıları kontrol et
+    check-diagonal: false
+    # Ağaç tabanı kontrolü (toprak/çim üzerinde olmalı)
+    check-base: true
+    # İzin verilen taban blokları
+    valid-base-blocks:
+    - DIRT
+    - GRASS_BLOCK
+    - COARSE_DIRT
+    - PODZOL
+    - MYCELIUM
+    - ROOTED_DIRT
+    - MOSS_BLOCK
+    # Ağaç şekil validation
+    shape-validation:
+      enabled: true
+      # Maksimum dal genişliği
+      max-branch-width: 5
+      # Minimum gövde yüksekliği
+      min-trunk-height: 2
+
+# Balta Dayanıklılık Sistemi
+durability:
+  # Durability azalma çarpanı (0.5x = yarı, 1.0x = normal, 2.0x = çift)
+  damage-multiplier: 1.0
+  # Minimum damage (en az bu kadar azalır)
+  minimum-damage: 1
+  # Maksimum damage (en fazla bu kadar azalır)
+  maximum-damage: 10
+  # Balta kırılma uyarısı (kalan durability)
+  low-durability-warning: 10
+  # Kırılan balta ile devam etme izni
+  allow-broken-axe: false
+  # Dayanıklılık hesaplama formülü
+  # "linear" = doğrusal, "exponential" = exponansiyel, "logarithmic" = logaritmik
+  damage-formula: linear
+  # Exponential formula için base değeri
+  exponential-base: 1.1
+  # Logarithmic formula için scale değeri
+  logarithmic-scale: 2.0
+  # Unbreaking enchantı etkisi
+  unbreaking-effect:
+    enabled: true
+    # Unbreaking seviye başına azalma çarpanı
+    reduction-per-level: 0.15
+
+# Permission Ayarları
+permissions:
+  # Temel kullanım izni
+  use: timberplus.use
+  # Admin komutları
+  admin: timberplus.admin
+  # Sınırsız kırma
+  unlimited: timberplus.unlimited
+  # Cooldown bypass
+  bypass-cooldown: timberplus.bypass.cooldown
+
+# Leaderboard Ayarları
+leaderboard:
+  # Güncellenme sıklığı (dakika)
+  update-interval: 5
+  # Gösterilecek oyuncu sayısı
+  display-count: 10
+  # Cache süresi (dakika)
+  cache-duration: 60
+
+# PlaceholderAPI Ayarları
+placeholders:
+  # Aktif placeholder'lar
+  enabled:
+  - logs_broken
+  - rank
+  - top_1
+  - top_10
+  - success_rate
+
+# Mesaj Ayarları
+messages:
+  # Varsayılan dil
+  default-language: tr
+  # Mevcut diller
+  available-languages:
+  - tr
+  - en
+  # Mesaj prefix'i
+  prefix: '&8[&6TimberPlus&8]&r '
+  # Action bar güncelleme sıklığı (tick)
+  actionbar-update-rate: 2
+  # Chat mesajlarının renk kodları aktif mi
+  color-codes-enabled: true
+  # Debugging mesajları
+  debug-messages: false
+
+# Debug ve Performance
+debug:
+  # Debug modu
+  enabled: false
+  # Performans metrikleri
+  performance-logging: false
+  # Console log seviyesi
+  log-level: INFO # DEBUG, INFO, WARN, ERROR
+  # İstatistik toplama
+  collect-statistics: true
+  # Memory usage monitoring
+  memory-monitoring: false
+  # TPS impact logging
+  tps-monitoring: false
+
+# Folia Desteği
+folia:
+  # Folia uyumluluğu
+  enabled: true
+  # Region işlemleri
+  region-aware: true
+  # Async task timeout (saniye)
+  async-timeout: 30
+  # Region lock timeout (saniye)
+  region-lock-timeout: 5
+
+# Ses ve Efekt Ayarları
+sounds:
+  # Sesler aktif mi
+  enabled: true
+  # Mini game başarı sesi
+  success-sound:
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    volume: 0.8
+    pitch: 1.2
+  # Mini game başarısızlık sesi
+  fail-sound:
+    sound: ENTITY_VILLAGER_NO
+    volume: 0.6
+    pitch: 0.8
+  # Ağaç kırma tamamlanma sesi
+  tree-cut-complete:
+    sound: BLOCK_WOOD_BREAK
+    volume: 1.0
+    pitch: 0.9
+
+# Particle Efektleri
+particles:
+  # Partiküller aktif mi
+  enabled: true
+  # Kırılan log'larda partikül
+  log-break-particles:
+    enabled: true
+    particle: BLOCK_CRACK
+    count: 10
+    spread: 0.5
+  # Mini game başarı partikülleri
+  success-particles:
+    enabled: true
+    particle: VILLAGER_HAPPY
+    count: 5
+    spread: 0.3
+
+# Dünya Ayarları
+worlds:
+  # Aktif dünyalar (boş liste = tüm dünyalar)
+  enabled-worlds: []
+  # Deaktif dünyalar
+  disabled-worlds:
+  - disabled_world_example
+
+# Toggle Ayarları
+toggle:
+  # Varsayılan toggle durumu (yeni oyuncular için)
+  default-enabled: false
+  # Toggle değiştirme cooldown'u (saniye)
+  toggle-cooldown: 3
+  # Server restart sonrası toggle durumu korunur
+  persistent: true

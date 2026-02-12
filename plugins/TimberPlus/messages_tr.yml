@@ -1,0 +1,104 @@
+# TimberPlus Plugin - Türkçe Dil Dosyası
+version: "1.0.0"
+language: "tr"
+
+# Genel Mesajlar
+general:
+  prefix: "&8[&6TimberPlus&8]&r "
+  no-permission: "&cBu komutu kullanmak için yetkiniz yok!"
+  player-only: "&cBu komut sadece oyuncular tarafından kullanılabilir!"
+  config-reloaded: "&aKonfigurasyon dosyası yeniden yüklendi!"
+  unknown-command: "&cBilinmeyen komut! &e/tmp help &ckullanın."
+  database-error: "&cVeritabanı hatası oluştu!"
+
+# Toggle Sistemi
+toggle:
+  enabled: "&aAğaç kırma modu &2AÇILDI&a!"
+  disabled: "&cAğaç kırma modu &4KAPANDI&c!"
+  status-enabled: "&aAğaç kırma modu şu anda &2aktif&a."
+  status-disabled: "&cAğaç kırma modu şu anda &4deaktif&c."
+  cooldown: "&cAğaç kırma modunu değiştirmek için &e{time} &csaniye beklemelisiniz!"
+
+# Mini Game Mesajları
+mini-game:
+  started: "&eAğaç kırma oyunu başladı! &aYeşil alanda durdur!"
+  instructions: "&7Ok hareket ediyor, yeşil alanda durdurmaya çalış!"
+  success: "&a✓ &2Başarılı! &7({current}/{required})"
+  failed: "&c✗ &4Başarısız! &7Oyun sıfırlandı."
+  timeout: "&cSüre doldu! &7Oyun sıfırlandı."
+  completed: "&a&l★ &2Mükemmel! &aAğaç kırma işlemi başlıyor..."
+  cancelled: "&7Oyundan çıkıldı."
+  exit-instruction: "&7Çıkmak için &eE &7tuşuna basın"
+  
+  # Action Bar Mesajları (özel formatlar)
+  actionbar:
+    timer: "&eSüre: &f⏰ {time}s"
+    progress: "&a{success} &7/ &e{required}"
+    exit-key: "&7E: Çıkış"
+    game-bar: "{timer} &r{bar} &r{progress} &r{exit}"
+
+# Ağaç Kırma Mesajları
+tree-cutting:
+  no-axe: "&cAğaç kırmak için elinizde balta bulunması gerekiyor!"
+  not-tree: "&cBu blok geçerli bir ağaç değil!"
+  too-small: "&cBu ağaç çok küçük! Minimum {min} log bloğu gereklidir."
+  too-big: "&cBu ağaç çok büyük! Maksimum {max} log bloğu kırılabilir."
+  no-leaves: "&cBu ağacın yaprakları bulunmuyor!"
+  invalid-base: "&cAğaç geçerli bir zeminde değil!"
+  processing: "&eAğaç kırılıyor... &7({current}/{total})"
+  completed: "&a&l✓ &2Ağaç başarıyla kırıldı! &e{count} &akütük elde edildi."
+  axe-broken: "&c&lUyarı! &cBaltanız kırıldı!"
+  axe-low-durability: "&e&lUyarı! &eBaltanızın dayanıklılığı düşük! &7({durability} kaldı)"
+
+# İstatistik Mesajları
+stats:
+  header: "&6&l═══ &e{player} &6İstatistikleri &6&l═══"
+  logs-broken: "&a• Kırılan Kütük: &f{count}"
+  successful-games: "&2• Başarılı Oyun: &f{success}"
+  total-games: "&e• Toplam Oyun: &f{total}"
+  success-rate: "&b• Başarı Oranı: &f{rate}%"
+  rank: "&d• Sıralama: &f#{rank}"
+  last-played: "&7• Son Oyun: &f{date}"
+  not-found: "&cOyuncu istatistiği bulunamadı!"
+
+# Leaderboard Mesajları
+leaderboard:
+  header: "&6&l═══════ &eEn İyi 10 Oyuncu &6&l═══════"
+  entry: "&7{rank}. &a{player} &7- &e{count} &7kütük"
+  your-rank: "&bSenin Sıran: &f#{rank} &7({count} kütük)"
+  empty: "&cHenüz hiç oyuncu istatistiği bulunmuyor!"
+  updating: "&eLeaderboard güncelleniyor..."
+
+# Hata Mesajları
+errors:
+  cooldown-active: "&cBir mini game zaten devam ediyor!"
+  game-in-progress: "&cŞu anda bir oyun oynuyorsunuz!"
+  no-game-active: "&cAktif bir oyun bulunmuyor!"
+  axe-required: "&cBu işlem için elinizde balta bulunması gerekiyor!"
+  invalid-tree: "&cGeçersiz ağaç yapısı tespit edildi!"
+  region-protected: "&cBu bölge korunuyor!"
+  world-disabled: "&cBu dünyada TimberPlus aktif değil!"
+  
+# Yardım Mesajları
+help:
+  header: "&6&l═════ &eTimberPlus Komutları &6&l═════"
+  toggle: "&e/tmp &7- Ağaç kırma modunu açar/kapatır"
+  stats: "&e/tmp stats [oyuncu] &7- İstatistikleri gösterir"
+  leaderboard: "&e/tmp top &7- En iyi 10 oyuncuyu gösterir"
+  reload: "&e/tmp reload &7- &c(Admin) &7Konfigurayonu yeniler"
+  help: "&e/tmp help &7- Bu yardım menüsünü gösterir"
+
+# Admin Mesajları
+admin:
+  reload-success: "&aTimberPlus konfigurasyon dosyaları yeniden yüklendi!"
+  reload-error: "&cKonfigurasyon yüklenirken hata oluştu!"
+  database-reset: "&aOyuncu veritabanı sıfırlandı!"
+  stats-reset: "&a{player} oyuncusunun istatistikleri sıfırlandı!"
+  debug-enabled: "&aDebug modu açıldı!"
+  debug-disabled: "&cDebug modu kapatıldı!"
+
+# PlaceholderAPI Mesajları
+placeholders:
+  not-available: "Mevcut Değil"
+  no-data: "Veri Yok"
+  loading: "Yükleniyor..."
