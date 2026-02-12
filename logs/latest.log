@@ -1,0 +1,8 @@
+[21:28:40] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.2+13-58; Oracle Corporation null) on Windows 10 10.0 (amd64)
+[21:28:40] [ServerMain/INFO]: [bootstrap] Loading Purpur 1.21.11-2561-HEAD@f6242c0 (2026-02-08T00:05:02Z) for Minecraft 1.21.11
+[21:28:41] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[21:28:41] [ServerMain/INFO]: [PluginInitializerManager] Initialized 0 plugins
+[21:28:42] [Paper Plugin Remapper Thread - 0/INFO]: [ReobfServer] Remapping server...
+[21:28:50] [ServerMain/WARN]: Failed to load eula.txt
+[21:28:50] [ServerMain/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+[21:28:50] [Paper Plugin Remapper Thread - 0/INFO]: [ReobfServer] Done remapping server in 7781ms.
