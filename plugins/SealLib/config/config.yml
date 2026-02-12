@@ -1,0 +1,5 @@
+debug: false
+metricsEnabled: true
+updaterAllowBeta: false
+updaterAllowAlpha: false
+analyticsID: AA-500439379
