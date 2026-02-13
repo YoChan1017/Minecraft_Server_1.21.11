@@ -1,120 +1,121 @@
 Command:
   ArgumentName:
-    Generic: value
-    Type: type
-    Number: number
-    Name: name
-    Amount: amount
-    Player: player
-    World: world
-    ItemType: itemType
-    BlockType: blockType
-    Enchantment: enchantment
+    Generic: 값
+    Type: 유형
+    Number: 숫자
+    Name: 이름
+    Amount: 수량
+    Player: 플레이어
+    World: 월드
+    ItemType: 아이템유형
+    BlockType: 블록유형
+    Enchantment: 인챈트
   Usage:
     RequiredArgument: <soft_red><%name%></soft_red>
     OptionalArgument: <soft_yellow>[%name%]</soft_yellow>
     OptionalFlag: <gray>[%name%]</gray>
   Help:
-    Desc: List all sub-commands.
+    Desc: 모든 하위 명령어를 나열합니다.
   Reload:
-    Desc: Reload the plugin.
+    Desc: 플러그인을 리로드합니다.
   CheckPerm:
-    Desc: Print player permissions info.
+    Desc: 플레이어 권한 정보를 출력합니다.
   DumpItem:
-    Desc: Print item NBT info.
+    Desc: 아이템 NBT 정보를 출력합니다.
   EconomyBridge:
-    Name: Economy Bridge
-    Desc: Economy Bridge commands.
+    Name: 이코노미 브릿지
+    Desc: 이코노미 브릿지 명령어입니다.
     FromItem:
-      Desc: Create item currency.
+      Desc: 아이템 통화를 생성합니다.
   Syntax:
-    GenericError: <gray><soft_red>%input%</soft_red> is not a valid <soft_red>%name%</soft_red> argument!</gray>
-    NumberNotDecimal: <gray><soft_red>%name%</soft_red> argument value must be decimal, but <soft_red>%input%</soft_red> was found.</gray>
-    NumberNotInteger: <gray><soft_red>%name%</soft_red> argument value must be integer, but <soft_red>%input%</soft_red> was found.</gray>
-    NumberAboveMax: <gray><soft_red>%name%</soft_red> argument value can not be greater than <soft_red>%value%</soft_red>, but <soft_red>%input%</soft_red> was found.</gray>
-    NumberBelowMin: <gray><soft_red>%name%</soft_red> argument value can not be smaller than <soft_red>%value%</soft_red>, but <soft_red>%input%</soft_red> was found.</gray>
-    InvalidWorld: <gray><soft_red>%input%</soft_red> is not a valid world!</gray>
-    InvalidItem: <gray><soft_red>%input%</soft_red> is not a valid item!</gray>
-    InvalidBlock: <gray><soft_red>%input%</soft_red> is not a valid block!</gray>
-    InvalidEnchantment: <gray><soft_red>%input%</soft_red> is not a valid enchantment!</gray>
+    GenericError: <gray><soft_red>%input%</soft_red>은(는) 유효한 <soft_red>%name%</soft_red> 인자가 아닙니다!</gray>
+    NumberNotDecimal: <gray><soft_red>%name%</soft_red> 인자 값은 소수여야 하지만, <soft_red>%input%</soft_red>이(가) 입력되었습니다.</gray>
+    NumberNotInteger: <gray><soft_red>%name%</soft_red> 인자 값은 정수여야 하지만, <soft_red>%input%</soft_red>이(가) 입력되었습니다.</gray>
+    NumberAboveMax: <gray><soft_red>%name%</soft_red> 인자 값은 <soft_red>%value%</soft_red>보다 클 수 없지만, <soft_red>%input%</soft_red>이(가) 입력되었습니다.</gray>
+    NumberBelowMin: <gray><soft_red>%name%</soft_red> 인자 값은 <soft_red>%value%</soft_red>보다 작을 수 없지만, <soft_red>%input%</soft_red>이(가) 입력되었습니다.</gray>
+    InvalidWorld: <gray><soft_red>%input%</soft_red>은(는) 유효한 월드가 아닙니다!</gray>
+    InvalidItem: <gray><soft_red>%input%</soft_red>은(는) 유효한 아이템이 아닙니다!</gray>
+    InvalidBlock: <gray><soft_red>%input%</soft_red>은(는) 유효한 블록이 아닙니다!</gray>
+    InvalidEnchantment: <gray><soft_red>%input%</soft_red>은(는) 유효한 인챈트가 아닙니다!</gray>
   Execution:
-    PlayerOnly: <soft_red>This command is for players only.</soft_red>
-    NotYourself: <soft_red>You can't use this command on yourself.</soft_red>
+    PlayerOnly: <soft_red>이 명령어는 플레이어만 사용할 수 있습니다.</soft_red>
+    NotYourself: <soft_red>이 명령어는 자신에게 사용할 수 없습니다.</soft_red>
     MissingArguments:
     - '[prefix="false"]'
     - ' '
-    - '<red>Error: </red><gray>Missing required arguments!</gray>'
-    - '<red>Usage: </red><soft_yellow>/%command%</soft_yellow>'
+    - '<red>오류: </red><gray>필수 인자가 누락되었습니다!</gray>'
+    - '<red>사용법: </red><soft_yellow>/%command%</soft_yellow>'
     - ' '
 HelpPage:
   General:
   - '[prefix="false"]'
   - ' '
-  - <gray>  <yellow><b>%name%</b></yellow> - <yellow><b>Commands:</b></yellow></gray>
+  - <gray>  <yellow><b>%name%</b></yellow> - <yellow><b>명령어:</b></yellow></gray>
   - ' '
-  - <gray>  <red><b><></b></red> - Required, <green><b>[]</b></green> - Optional.</gray>
+  - <gray>  <red><b><></b></red> - 필수, <green><b>[]</b></green> - 선택.</gray>
   - ' '
   - '%entry%'
   - ' '
   Entry: '  <soft_yellow>/%command%</soft_yellow><gray> - %description%</gray>'
 Plugin:
-  Reloaded: <gray>Plugin <green>reloaded</green>!</gray>
+  Reloaded: <gray>플러그인이 <green>리로드</green>되었습니다!</gray>
 EconomyBridge:
   FromItem:
-    Nothing: <red>You must hold an item in hand!</red>
-    Exists: <red>Currency with this name already exists!</red>
-    Created: <gray>Created <yellow>%currency_name%</yellow> currency as <yellow>%currency_id%</yellow>.</gray>
+    Nothing: <red>손에 아이템을 들고 있어야 합니다!</red>
+    Exists: <red>해당 이름의 통화가 이미 존재합니다!</red>
+    Created: <gray><yellow>%currency_name%</yellow> 통화를 <yellow>%currency_id%</yellow>(으)로 생성했습니다.</gray>
 Error:
-  NoPermission: <soft_red>You don't have permission to do that!</soft_red>
-  InvalidPlayer: <soft_red>Player not found!</soft_red>
+  NoPermission: <soft_red>권한이 없습니다!</soft_red>
+  InvalidPlayer: <soft_red>플레이어를 찾을 수 없습니다!</soft_red>
 Time:
   Label:
-    Day: '%sd.'
-    Hour: '%sh.'
-    Minute: '%smin.'
-    Second: '%ssec.'
+    Day: '%s일'
+    Hour: '%s시간'
+    Minute: '%s분'
+    Second: '%s초'
   Delimiter: ' '
 States:
   EnabledDisabled:
-    onTrue: <green>Enabled</green>
-    onFalse: <red>Disabled</red>
+    onTrue: <green>활성화됨</green>
+    onFalse: <red>비활성화됨</red>
   YesNo:
-    onTrue: <green>Yes</green>
-    onFalse: <red>No</red>
+    onTrue: <green>예</green>
+    onFalse: <red>아니요</red>
   OnOff:
-    onTrue: <green>ON</green>
-    onFalse: <red>OFF</red>
+    onTrue: <green>켜짐</green>
+    onFalse: <red>꺼짐</red>
 Entry:
   Valid: <green>✔</green> <gray>%s</gray>
   Invalid: <red>✘</red> <gray>%s</gray>
 Other:
-  Any: Any
-  None: None
-  Never: Never
-  OneTimed: One-timed
-  Unlimited: Unlimited
+  Any: 상관없음
+  None: 없음
+  Never: 안함
+  OneTimed: 일회용
+  Unlimited: 무제한
   Infinity: ∞
 MenuItem:
   Exit:
-    Name: <red><b>Close</b></red>
+    Name: <red><b>닫기</b></red>
     Lore: []
   Back:
-    Name: <soft_yellow><b>Back</b></soft_yellow>
+    Name: <soft_yellow><b>뒤로</b></soft_yellow>
     Lore: []
   NextPage:
-    Name: <white><b><u>Next Page</u> →</b></white>
+    Name: <white><b><u>다음 페이지</u> →</b></white>
     Lore: []
   PreviousPage:
-    Name: <white><b>← <u>Previous Page</u></b></white>
+    Name: <white><b>← <u>이전 페이지</u></b></white>
     Lore: []
 Dialog:
   Button:
     OK:
-      Label: <green>✔</green> OK
+      Label: <green>✔</green> 확인
       Width: 150
     Cancel:
-      Label: <red>✘</red> Cancel
+      Label: <red>✘</red> 취소
       Width: 150
     Back:
-      Label: <soft_yellow>←</soft_yellow> Back
+      Label: <soft_yellow>←</soft_yellow> 뒤로
       Width: 150
+      
