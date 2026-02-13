@@ -1,4 +1,4 @@
-blockMsg: "<red>You are not allowed to use this command"
+blockMsg: "<red>이 명령어를 사용할 수 없습니다."
 disabled-commands:
   - pl
   - bukkit:pl

@@ -1,48 +1,48 @@
 hologram:
 - '&#FF0000☠ &#FF0000&l%player% &#FF0000☠'
 - '&#00CC00⌛ &#00FF00%despawn-time% &#00CC00⌛'
-- '&#00AAFF%item% &fɪᴛᴇᴍ &8| &#00AAFF%xp% &fxᴘ'
+- '&#00AAFF%item% &f아이템 &8| &#00AAFF%xp% &fXP'
 
 help:
 - ' '
-- <gradient:#FF00FF:#DD00FF><b>AxGraves</b></gradient> <#FF55FF>Help
-- ' <#FF55FF>➤ <white>/axgraves reload <#DDDDDD>| <#FFAAFF>Reload plugin'
-- ' <#FF55FF>➤ <white>/axgraves list <#DDDDDD>| <#FFAAFF>List spawned graves'
-- ' <#FF55FF>➤ <white>/axgraves tp <#DDDDDD>| <#FFAAFF>Teleport to last grave'
+- <gradient:#FF00FF:#DD00FF><b>AxGraves</b></gradient> <#FF55FF>도움말
+- ' <#FF55FF>➤ <white>/axgraves reload <#DDDDDD>| <#FFAAFF>플러그인 리로드'
+- ' <#FF55FF>➤ <white>/axgraves list <#DDDDDD>| <#FFAAFF>생성된 무덤 목록 확인'
+- ' <#FF55FF>➤ <white>/axgraves tp <#DDDDDD>| <#FFAAFF>마지막 무덤으로 텔레포트'
 - ' '
 
-gui-name: '&0%player%''s Grave'
+gui-name: '&0%player%의 무덤'
 
-# if you restart the server, sometimes the server can't find the owner's name, this will be used for it
-unknown-player: Unknown
+# 서버 재시작 시 소유자의 이름을 찾을 수 없을 때 대신 사용됩니다.
+unknown-player: 알 수 없음
 
 reload:
-  success: '&#33FF33Plugin successfully reloaded!'
-  failed: '&#FF3333Failed to reload the plugin! Something is wrong in the &f%file%&#FF3333 file, look in the console or use a yaml validator to fix the errors!'
+  success: '&#33FF33플러그인이 성공적으로 리로드되었습니다!'
+  failed: '&#FF3333플러그인 리로드 실패! &f%file%&#FF3333 파일에 문제가 있습니다. 콘솔을 확인하거나 YAML 검사기를 사용하여 오류를 수정하세요!'
 
 interact:
-  not-your-grave: '&#FFAAFFYou can only open your own grave!'
+  not-your-grave: '&#FFAAFF자신의 무덤만 열 수 있습니다!'
 
 death-message:
-  enabled: false
-  message: '&#FFAAAAYou have died at &f%world% %x%, %y%, %z%&#FFAAAA!'
+  enabled: true
+  message: '&#FFAAAA당신은 &f%world% %x%, %y%, %z%&#FFAAAA 좌표에서 사망했습니다!'
 
 grave-list:
-  header: '&#FF00FF&l=== GRAVES ==='
-  grave: '&#FF00FF[TP] &#FFAAFF%player% &7- &#FFAAFF%world% %x%, %y%, %z% &7(%time%)'
-  no-graves: '&#FFAAFFNo graves found!'
+  header: '&#FF00FF&l=== 무덤 목록 ==='
+  grave: '&#FF00FF[이동] &#FFAAFF%player% &7- &#FFAAFF%world% %x%, %y%, %z% &7(%time%)'
+  no-graves: '&#FFAAFF발견된 무덤이 없습니다!'
 
 commands:
-  invalid-value: '&#FF0000Invalid parameter: &#BB0000%value%'
-  invalid-command: '&#FF0000Invalid command or subcommand!'
-  missing-argument: '&#FF0000Missing argument! You must specify a value for &#BB0000%value%&#FF0000.'
-  no-permission: '&#FF0000You don''t have permission to access this command!'
-  out-of-range: '&#FF0000The &#BB0000%number% &#FF0000must be between &#BB0000%min% &#FF0000and &#BB0000%max%&#FF0000!'
-  player-only: '&#FF0000You must be a player to use this command!'
-  invalid-player: '&#FF0000The player &#BB0000%player% &#FF0000can not be found!'
-  invalid-selector: '&#FF0000You can not use this selector in this command!'
+  invalid-value: '&#FF0000잘못된 값입니다: &#BB0000%value%'
+  invalid-command: '&#FF0000잘못된 명령어 또는 하위 명령어입니다!'
+  missing-argument: '&#FF0000인수가 누락되었습니다! &#BB0000%value%&#FF0000에 대한 값을 지정해야 합니다.'
+  no-permission: '&#FF0000이 명령어를 사용할 권한이 없습니다!'
+  out-of-range: '&#BB0000%number% &#FF0000숫자는 &#BB0000%min%&#FF0000에서 &#BB0000%max% &#FF0000사이여야 합니다!'
+  player-only: '&#FF0000이 명령어는 플레이어만 사용할 수 있습니다!'
+  invalid-player: '&#BB0000%player% &#FF0000플레이어를 찾을 수 없습니다!'
+  invalid-selector: '&#FF0000이 명령어에서는 해당 선택자를 사용할 수 없습니다!'
 
-update-notifier: '&#FF88FFThere is a new version of AxGraves available! &#DDDDDD(&#FFFFFFcurrent: &#FF0000%current% &#DDDDDD| &#FFFFFFlatest: &#00FF00%latest%&#DDDDDD)'
+update-notifier: '&#FF88FFAxGraves의 새로운 버전을 사용할 수 있습니다! &#DDDDDD(&#FFFFFF현재: &#FF0000%current% &#DDDDDD| &#FFFFFF최신: &#00FF00%latest%&#DDDDDD)'
 
-# do not edit
+# 수정하지 마세요
 version: 6

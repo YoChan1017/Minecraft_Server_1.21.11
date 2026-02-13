@@ -149,11 +149,12 @@ placeholders:
 # Mesaj Ayarları
 messages:
   # Varsayılan dil
-  default-language: tr
+  default-language: ko
   # Mevcut diller
   available-languages:
   - tr
   - en
+  - ko
   # Mesaj prefix'i
   prefix: '&8[&6TimberPlus&8]&r '
   # Action bar güncelleme sıklığı (tick)

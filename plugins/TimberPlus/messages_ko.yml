@@ -1,0 +1,104 @@
+# TimberPlus Plugin - 한국어 언어 파일
+version: "1.0.0"
+language: "ko"
+
+# 일반 메시지
+general:
+  prefix: "&8[&6TimberPlus&8]&r "
+  no-permission: "&c이 명령어를 사용할 권한이 없습니다!"
+  player-only: "&c이 명령어는 플레이어만 사용할 수 있습니다!"
+  config-reloaded: "&a설정 파일이 성공적으로 다시 로드되었습니다!"
+  unknown-command: "&c알 수 없는 명령어입니다! &e/tmp help &c를 입력하세요."
+  database-error: "&c데이터베이스 오류가 발생했습니다!"
+
+# 토글 시스템
+toggle:
+  enabled: "&a벌목 모드가 &2활성화&a되었습니다!"
+  disabled: "&c벌목 모드가 &4비활성화&c되었습니다!"
+  status-enabled: "&a현재 벌목 모드는 &2활성&a 상태입니다."
+  status-disabled: "&c현재 벌목 모드는 &4비활성&c 상태입니다."
+  cooldown: "&c모드를 전환하려면 &e{time}&c초를 기다려야 합니다!"
+
+# 미니 게임 메시지
+mini-game:
+  started: "&e벌목 미니게임 시작! &a초록색 영역에서 멈추세요!"
+  instructions: "&7바가 움직입니다. 초록색 영역에서 클릭하여 멈추세요!"
+  success: "&a✓ &2성공! &7({current}/{required})"
+  failed: "&c✗ &4실패! &7게임이 초기화되었습니다."
+  timeout: "&c시간 초과! &7게임이 초기화되었습니다."
+  completed: "&a&l★ &2완벽합니다! &a나무를 베기 시작합니다..."
+  cancelled: "&7게임을 종료했습니다."
+  exit-instruction: "&7종료하려면 &eE &7키를 누르세요"
+  
+  # 액션바 메시지
+  actionbar:
+    timer: "&e남은 시간: &f⏰ {time}초"
+    progress: "&a{success} &7/ &e{required}"
+    exit-key: "&7E: 나가기"
+    game-bar: "{timer} &r{bar} &r{progress} &r{exit}"
+
+# 벌목 관련 메시지
+tree-cutting:
+  no-axe: "&c나무를 베려면 도끼를 들고 있어야 합니다!"
+  not-tree: "&c이 블록은 유효한 나무가 아닙니다!"
+  too-small: "&c나무가 너무 작습니다! 최소 {min}개의 원목 블록이 필요합니다."
+  too-big: "&c나무가 너무 큽니다! 최대 {max}개까지만 한 번에 벨 수 있습니다."
+  no-leaves: "&c이 나무에는 잎이 없습니다!"
+  invalid-base: "&c나무가 유효한 지면에 있지 않습니다!"
+  processing: "&e나무를 베는 중... &7({current}/{total})"
+  completed: "&a&l✓ &2나무를 성공적으로 베었습니다! &e{count} &a개의 원목을 획득했습니다."
+  axe-broken: "&c&l경고! &c도끼가 파괴되었습니다!"
+  axe-low-durability: "&e&l경고! &e도끼의 내구도가 낮습니다! &7({durability} 남음)"
+
+# 통계 메시지
+stats:
+  header: "&6&l═══ &e{player} &6님의 통계 &6&l═══"
+  logs-broken: "&a• 파괴한 원목: &f{count}"
+  successful-games: "&2• 성공한 게임: &f{success}"
+  total-games: "&e• 전체 게임: &f{total}"
+  success-rate: "&b• 성공률: &f{rate}%"
+  rank: "&d• 순위: &f#{rank}"
+  last-played: "&7• 최근 플레이: &f{date}"
+  not-found: "&c해당 플레이어의 통계를 찾을 수 없습니다!"
+
+# 리더보드 메시지
+leaderboard:
+  header: "&6&l═══════ &e벌목 상위 10명 &6&l═══════"
+  entry: "&7{rank}. &a{player} &7- &e{count}&7개"
+  your-rank: "&b나의 순위: &f#{rank} &7({count}개)"
+  empty: "&c아직 등록된 플레이어 통계가 없습니다!"
+  updating: "&e리더보드를 업데이트 중입니다..."
+
+# 오류 메시지
+errors:
+  cooldown-active: "&c이미 미니게임이 진행 중입니다!"
+  game-in-progress: "&c현재 게임을 플레이하고 있습니다!"
+  no-game-active: "&c진행 중인 게임이 없습니다!"
+  axe-required: "&c이 작업에는 도끼가 필요합니다!"
+  invalid-tree: "&c유효하지 않은 나무 구조가 감지되었습니다!"
+  region-protected: "&c이 지역은 보호되고 있습니다!"
+  world-disabled: "&c이 월드에서는 TimberPlus가 비활성화되어 있습니다!"
+  
+# 도움말 메시지
+help:
+  header: "&6&l═════ &eTimberPlus 명령어 &6&l═════"
+  toggle: "&e/tmp &7- 벌목 모드 활성화/비활성화"
+  stats: "&e/tmp stats [플레이어] &7- 통계를 확인합니다"
+  leaderboard: "&e/tmp top &7- 상위 10명을 확인합니다"
+  reload: "&e/tmp reload &7- &c(관리자) &7설정을 다시 로드합니다"
+  help: "&e/tmp help &7- 이 도움말 메뉴를 표시합니다"
+
+# 관리자 메시지
+admin:
+  reload-success: "&aTimberPlus 설정 파일이 다시 로드되었습니다!"
+  reload-error: "&c설정 로드 중 오류가 발생했습니다!"
+  database-reset: "&a플레이어 데이터베이스가 초기화되었습니다!"
+  stats-reset: "&a{player} 님의 통계가 초기화되었습니다!"
+  debug-enabled: "&a디버그 모드가 활성화되었습니다!"
+  debug-disabled: "&c디버그 모드가 비활성화되었습니다!"
+
+# PlaceholderAPI 메시지
+placeholders:
+  not-available: "사용 불가"
+  no-data: "데이터 없음"
+  loading: "로딩 중..."

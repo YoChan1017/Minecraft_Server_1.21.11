@@ -1,14 +1,14 @@
-# Default config for Sleeper
+# Sleeper 기본 설정
 
-# Plugin settings
-CheckForUpdates: true
+# 플러그인 설정
+CheckForUpdates: false
 
 # Available serializers:
 # minecraft - "&c&lExample Text"
 # minimessage - "<red><bold>Example Text"
 FormattingType: "minecraft"
 
-# Main settings
+# 주요 설정
 UseAnimation: true
 SkipPercentage: 25
 SkipSpeed: 100
@@ -18,63 +18,63 @@ ActionbarMessages: false
 PersistentSleepInfo: false
 PersistenceTime: 30
 
-# The time that should be skipped up to. 0 is 6:00am, and every 1000 is an hour added.
+# 밤을 건너뛰고 설정될 시간입니다. 0은 오전 6:00이며, 1000마다 1시간이 추가됩니다.
 DayTime: 0
-# Time after which non bed sleeping is allowed. E.g. voting and GSit
+# 침대 외의 수면(예: 투표 및 GSit 등)이 허용되는 시간입니다.
 NightTime: 12542
 
-# Other settings
+# 기타 설정
 BroadcastSleepInfo: false
 
-# Voting system, a night is skipped based on yes votes minus no votes
-VoteSkip: false
+# 투표 시스템: 찬성 표에서 반대 표를 뺀 값에 따라 밤을 건너뜁니다.
+VoteSkip: true
 YesMultiplier: 1
 NoMultiplier: 1
 SkipVotePercent: 50
 BlockBedsAfterVoting: false
 BossbarVoteCount: true
-ActionbarVoteCount: false
+ActionbarVoteCount: true
 SendVotesOnStart: true
 StartWithoutSleep: false
 MaxVoteTime: 60
 LimitedVoteTime: false
 AutomaticStart: false
 
-# Plugin integrations
+# 플러그인 연동
 # GSit
 GSitPoseToSleep: false
 # AFK plugins (Essentials)
 IgnoreAFKPlayers: true
 
-# General Messages
-SleepInfo: "&aSleep > &7%percent% (%count%) out of a minimum of %percent_needed% sleeping."
+# 일반 메시지
+SleepInfo: "&a수면 > &7최소 %percent_needed% 중 %percent% (%count%)명이 수면 중입니다."
 NightSkip: 
-  - "&aSleep > &7At least %percent_needed% of online users sleeping (%count%), skipping the night."
-Ignored: "&cSleep > &7You are still being ignored for sleep calculations!"
+  - "&a수면 > &7접속 유저의 최소 %percent_needed%가 잠들었습니다 (%count%명). 밤을 건너뜁니다."
+Ignored: "&c수면 > &7당신은 현재 수면 집계에서 제외된 상태입니다!"
 
-# Command messages
-SleepHelpList: "&cInvalid command, valid subcommands are: "
-NoPermission: "&cYou don't have permission for that."
-PlayerNotFound: "&c%player% not found."
-SelfIgnoreOff: "&aYou are no longer ignored from sleeping."
-SelfIgnoreOn: "&cYou are now ignored from sleeping."
-OtherIgnoreOff: "&a%player% is no longer ignored from sleeping."
-OtherIgnoreOn: "&c%player% is now ignored from sleeping."
-OtherAlreadyIgnored: "&c%player% is already ignored from sleeping."
-InvalidState: "&c%input% is not TRUE or FALSE."
-ConfigReloaded: "&aSleep config reloaded."
-OnlyPlayers: "&cThis command can only be run by players."
+# 명령어 메시지
+SleepHelpList: "&c잘못된 명령어입니다. 사용 가능한 하위 명령어: "
+NoPermission: "&c권한이 없습니다."
+PlayerNotFound: "&c%player% 님을 찾을 수 없습니다."
+SelfIgnoreOff: "&a이제 수면 집계에 포함됩니다."
+SelfIgnoreOn: "&c이제 수면 집계에서 제외됩니다."
+OtherIgnoreOff: "&a%player% 님이 이제 수면 집계에 포함됩니다."
+OtherIgnoreOn: "&c%player% 님이 이제 수면 집계에서 제외됩니다."
+OtherAlreadyIgnored: "&c%player% 님은 이미 수면 집계에서 제외된 상태입니다."
+InvalidState: "&c%input% 값은 TRUE 또는 FALSE여야 합니다."
+ConfigReloaded: "&aSleeper 설정이 다시 로드되었습니다."
+OnlyPlayers: "&c이 명령어는 플레이어만 사용할 수 있습니다."
 
-# Voting Messages
-VoteTitle: "&aSleep > &7Vote below on skipping the night:"
-VoteYes: "&a&lYes"
-VoteNo: "&c&lNo"
-VotedYes: "&aYou voted to skip the night."
-VotedNo: "&aYou voted not to skip the night."
-NoVote: "&cYour world isn't voting on a night skip."
-AlreadyYes: "&cYou have already voted yes."
-AlreadyNo: "&cYou have already voted no."
-VoteNotEnabled: "&cVoting is not enabled."
-ListVotes: "&7Votes: &aYes: &7%yes% &cNo: &7%no%"
-SkipByVote: "&aSleep > &7The vote has decided to skip the night!"
-VoteTimedOut: "&aSleep > &cThe vote ended without skipping the night."
+# 투표 메시지
+VoteTitle: "&a수면 > &7밤을 건너뛰려면 아래에 투표하세요:"
+VoteYes: "&a&l예"
+VoteNo: "&c&l아니요"
+VotedYes: "&a밤을 건너뛰는 것에 투표했습니다."
+VotedNo: "&a밤을 건너뛰지 않는 것에 투표했습니다."
+NoVote: "&c이 월드에서는 밤 건너뛰기 투표가 진행 중이지 않습니다."
+AlreadyYes: "&c이미 '예'에 투표했습니다."
+AlreadyNo: "&c이미 '아니요'에 투표했습니다."
+VoteNotEnabled: "&c투표 기능이 활성화되지 않았습니다."
+ListVotes: "&7투표 현황: &a예: &7%yes% &c아니요: &7%no%"
+SkipByVote: "&a수면 > &7투표 결과에 따라 밤을 건너뜁니다!"
+VoteTimedOut: "&a수면 > &c투표 시간이 종료되어 밤을 건너뛰지 못했습니다."
