@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Fire Shield</c>
+  DisplayName: <c:#279CF5>태양불꽃 방패</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>%enchantment_trigger_chance%% chance to ignite attackers for %duration%s.</gray>
+  - <gray>%enchantment_trigger_chance%% 확률로 %duration%초 동안 공격자를 점화합니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

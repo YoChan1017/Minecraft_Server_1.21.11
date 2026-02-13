@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Curse of Fragility</c>
+  DisplayName: <c:#279CF5>나약함의 저주</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Prevents an item from being grindstoned or anviled.</gray>
+  - <gray>아이템이 숫돌이나 모루에 갈리는 것을 방지합니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

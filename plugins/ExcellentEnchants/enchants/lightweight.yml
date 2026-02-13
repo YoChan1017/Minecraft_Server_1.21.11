@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Lightweight</c>
+  DisplayName: <c:#279CF5>안전화</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>You can safely jump on turtle eggs, farmlands and big dripleaf.</gray>
+  - <gray>거북이 알, 농경지, 큰 물방울잎 위를 안전하게 뛰어다닐 수 있습니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

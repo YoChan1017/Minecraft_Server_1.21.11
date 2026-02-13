@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Regrowth</c>
+  DisplayName: <c:#279CF5>워모그의 갑옷</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Restores %amount%❤ every few seconds.</gray>
+  - <gray>시간이 지남에 따라 %amount%❤를 회복합니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

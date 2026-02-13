@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Wisdom</c>
+  DisplayName: <c:#279CF5>영원한 기쁨</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Mobs drops x%modifier% more XP.</gray>
+  - <gray>몹이 x%modifier%만큼 더 많은 경험치를 드롭합니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

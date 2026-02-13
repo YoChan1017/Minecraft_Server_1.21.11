@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Silk Chest</c>
+  DisplayName: <c:#279CF5>보물상자</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Drop chests and saves all its content.</gray>
+  - <gray>내용물을 보관하는 상자를 떨어뜨립니다 .</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

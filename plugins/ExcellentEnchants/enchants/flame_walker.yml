@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Flame Walker</c>
+  DisplayName: <c:#279CF5>불꽃의 걸음</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Ability to walk on lava, immunity to magma damage.</gray>
+  - <gray>용암 위를 걸을 수 있으며 능력, 마그마 피해에 면역됩니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

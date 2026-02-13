@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Elemental Protection</c>
+  DisplayName: <c:#279CF5>원소 보호막</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Reduces potion and elemental damage by %amount%%.</gray>
+  - <gray>물약 및 원소 피해를 %amount%%만큼 감소시킵니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

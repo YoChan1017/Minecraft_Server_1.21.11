@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Temper</c>
+  DisplayName: <c:#279CF5>광전사의 분노</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Inflicts %amount%% more damage for each %radius%❤ missing.</gray>
+  - <gray>%radius%❤가 부족할 때마다 피해를 %amount%% 더 가합니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

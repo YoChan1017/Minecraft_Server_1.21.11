@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Village Defender</c>
+  DisplayName: <c:#279CF5>마을 수호자</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Inflicts %amount%❤ more damage to all pillagers.</gray>
+  - <gray>모든 약탈자에게 %amount%❤의 추가 피해를 입힙니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

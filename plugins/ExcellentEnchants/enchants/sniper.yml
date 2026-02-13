@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Sniper</c>
+  DisplayName: <c:#279CF5>저격수</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Increases projectile speed by %amount%%</gray>
+  - <gray>투사체 속도를 %amount%%만큼 증가시킵니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

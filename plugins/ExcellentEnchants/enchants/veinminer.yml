@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Veinminer</c>
+  DisplayName: <c:#279CF5>광맥 채굴기</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Mines up to %amount% blocks of the ore vein at once.</gray>
+  - <gray>광맥에서 광석 블록을 한 번에 최대 %amount%개까지 채굴합니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

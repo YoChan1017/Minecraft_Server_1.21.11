@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Seasoned Angler</c>
+  DisplayName: <c:#279CF5>베테랑 낚시꾼</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Increases amount of XP gained from fishing by %amount%%.</gray>
+  - <gray>낚시로 획득하는 XP 양이 %amount%%만큼 증가합니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

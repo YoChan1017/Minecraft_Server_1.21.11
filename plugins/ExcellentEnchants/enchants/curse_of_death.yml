@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Curse of Death</c>
+  DisplayName: <c:#279CF5>죽음의 저주</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>When killing players, you have a chance of dying too.</gray>
+  - <gray>플레이어를 죽일 때, 당신도 죽을 가능성이 있습니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

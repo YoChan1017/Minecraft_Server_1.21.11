@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Glass Breaker</c>
+  DisplayName: <c:#279CF5>유리혐오자</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Breaks glass instantly</gray>
+  - <gray>유리를 즉시 깨뜨립니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

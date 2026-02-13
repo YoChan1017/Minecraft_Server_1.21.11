@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Bane of Netherspawn</c>
+  DisplayName: <c:#279CF5>네더스폰의 재앙</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Inflicts %damage%❤ more damage to nether mobs.</gray>
+  - <gray>네더 몹에게 %damage%❤ 더 많은 피해를 입힙니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

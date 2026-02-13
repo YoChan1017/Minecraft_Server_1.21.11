@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Treefeller</c>
+  DisplayName: <c:#279CF5>나무꾼</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Cuts down an entire tree.</gray>
+  - <gray>나무 한 그루를 통째로 베어버립니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

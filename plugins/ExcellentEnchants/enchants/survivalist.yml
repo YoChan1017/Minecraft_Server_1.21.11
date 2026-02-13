@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Survivalist</c>
+  DisplayName: <c:#279CF5>베어그릴스</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Automatically cooks fish if what is caught is raw.</gray>
+  - <gray>잡은 생선이 날것일 경우 자동으로 조리합니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

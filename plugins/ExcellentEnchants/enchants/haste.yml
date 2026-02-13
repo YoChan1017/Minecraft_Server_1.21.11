@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Haste</c>
+  DisplayName: <c:#279CF5>빠른채굴</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Grants %enchantment_potion_type% %enchantment_potion_level% effect when mining blocks.</gray>
+  - <gray>블록 채굴 시 %enchantment_potion_type% %enchantment_potion_level% 효과를 부여합니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

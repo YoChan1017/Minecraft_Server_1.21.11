@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Auto Reel</c>
+  DisplayName: <c:#279CF5>자동 낚시</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Automatically reels in a hook on bite.</gray>
+  - <gray>입질 시 자동으로 낚싯바늘을 끌어올립니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Electrified Arrows</c>
+  DisplayName: <c:#279CF5>스태틱의 화살</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>%enchantment_trigger_chance%% chance for an arrow to strike lightning with %damage%❤ extra damage.</gray>
+  - <gray>%enchantment_trigger_chance%% 확률로 화살이 번개를 일으켜 %damage%❤의 추가 피해를 입힙니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Nimble</c>
+  DisplayName: <c:#279CF5>자석_M</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Moves all entity's loot directly to your inventory.</gray>
+  - <gray>모든 엔티티의 전리품을 즉시 인벤토리로 옮깁니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.

@@ -3,11 +3,11 @@ Definition:
   # https://docs.advntr.dev/minimessage/format.html#standard-tags
   # [*] Only one color and decorations are allowed.
   # [*] Reboot required when changed.
-  DisplayName: <c:#279CF5>Tunnel</c>
+  DisplayName: <c:#279CF5>굴착기</c>
   # Enchantment description.
   # [*] Reboot required when changed.
   Description:
-  - <gray>Mines multiple blocks at once in a certain shape.</gray>
+  - <gray>특정한 형태로 여러 블록을 한 번에 채굴합니다.</gray>
   # Weight affects the chance of getting an enchantment from enchanting or loots.
   # Value between 1 and 1024 (inclusive).
   # [*] Reboot required when changed.
