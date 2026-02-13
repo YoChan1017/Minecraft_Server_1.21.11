@@ -39,6 +39,10 @@ Command:
     Done: <gray><soft_yellow>%player_display_name%</soft_yellow> 님에게 <soft_yellow>%tier_name%</soft_yellow> 등급 책을 지급했습니다.</gray>
   Syntax:
     InvalidSlot: <gray><soft_red>%input%</soft_red>은(는) 유효한 슬롯이 아닙니다!</gray>
+  RandomBook:
+    Desc: Give a book with random enchantment.
+  GiveFuel:
+    Desc: Give enchantment fuel item.
 
 Charges:
   Fuel:
