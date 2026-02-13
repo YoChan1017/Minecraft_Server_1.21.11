@@ -1,0 +1,99 @@
+Command:
+  Argument:
+    Name:
+      Level: 레벨
+      Slot: 슬롯
+  List:
+    Desc: 커스텀 인챈트 목록을 확인합니다.
+    Usage: '[플레이어]'
+    DoneOthers: <gray><soft_yellow>%player_name%</soft_yellow> 님의 인챈트 GUI를 열었습니다.</gray>
+  GetFuel:
+    Desc: 인챈트 충전(연료) 아이템을 지급합니다.
+    Usage: <인챈트> [수량]
+    Done: <gray><soft_yellow>%name%</soft_yellow> <soft_yellow>x%amount%</soft_yellow>개를 받았습니다.</gray>
+  Enchant:
+    Desc: 손에 든 아이템에 인챈트를 부여합니다.
+    Usage: <인챈트> <레벨> [플레이어] [슬롯]
+    Done:
+      Self: <gray><soft_yellow>%item%</soft_yellow>에 <soft_yellow>%enchant% %level%</soft_yellow> 인챈트가 부여되었습니다!</gray>
+      Others: <gray><soft_yellow>%player_display_name%</soft_yellow> 님의 <soft_yellow>%item%</soft_yellow>에 <soft_yellow>%enchant% %level%</soft_yellow> 인챈트가 부여되었습니다!</gray>
+    Error:
+      NoItem: <soft_red>인챈트할 아이템이 없습니다!</soft_red>
+  Disenchant:
+    Desc: 지정된 슬롯의 인챈트를 제거합니다.
+    Done:
+      Self: <gray><soft_yellow>%item%</soft_yellow>에서 <soft_yellow>%enchant%</soft_yellow> 인챈트가 제거되었습니다!</gray>
+      Others: <gray><soft_yellow>%player_display_name%</soft_yellow> 님의 <soft_yellow>%item%</soft_yellow>에서 <soft_yellow>%enchant%</soft_yellow> 인챈트가 제거되었습니다!</gray>
+  Book:
+    Desc: 특정 인챈트가 부여된 책을 지급합니다.
+    Usage: <플레이어> <인챈트> <레벨>
+    Done: <gray><soft_yellow>%player_display_name%</soft_yellow> 님에게 <soft_yellow>%enchant% %level%</soft_yellow> 책을 지급했습니다.</gray>
+  RarityBook:
+    Desc: 특정 희귀도의 인챈트 책을 지급합니다.
+    Usage: <플레이어> <희귀도> <레벨>
+    Done: <gray><soft_yellow>%player_display_name%</soft_yellow> 님에게 <soft_yellow>%name%</soft_yellow> 인챈트 책을 지급했습니다.</gray>
+  TierBook:
+    Desc: 특정 등급의 인챈트 책을 지급합니다.
+    Usage: <플레이어> <등급> <레벨>
+    Error: <soft_red>잘못된 등급입니다!</soft_red>
+    Done: <gray><soft_yellow>%player_display_name%</soft_yellow> 님에게 <soft_yellow>%tier_name%</soft_yellow> 등급 책을 지급했습니다.</gray>
+  Syntax:
+    InvalidSlot: <gray><soft_red>%input%</soft_red>은(는) 유효한 슬롯이 아닙니다!</gray>
+
+Charges:
+  Fuel:
+    Gave: <gray><soft_yellow>%player_name%</soft_yellow> 님에게 <soft_yellow>%name%</soft_yellow> 연료 <soft_yellow>x%amount%</soft_yellow>개를 지급했습니다.</gray>
+    BadEnchantment: <gray><soft_red>%name%</soft_red> 인챈트는 충전할 수 없습니다.</gray>
+
+Error:
+  InvalidEnchantment: <red>유효하지 않은 인챈트입니다.</red>
+  InvalidRarity: <red>유효하지 않은 희귀도입니다!</red>
+  NoEnchant: <red>존재하지 않는 인챈트입니다.</red>
+
+ItemCategory:
+  HELMET: 투구
+  CHESTPLATE: 흉갑
+  LEGGINGS: 레깅스
+  BOOTS: 부츠
+  ELYTRA: 겉날개
+  SWORD: 검
+  TRIDENT: 삼지창
+  AXE: 도끼
+  BOW: 활
+  CROSSBOW: 쇠뇌
+  HOE: 괭이
+  PICKAXE: 곡괭이
+  SHOVEL: 삽
+  FISHING_ROD: 낚싯대
+  SHIELD: 방패
+  TOOL: 도구
+
+EnchantmentTarget:
+  ALL: 모두
+  ARMOR: 방어구
+  ARMOR_FEET: 부츠
+  ARMOR_LEGS: 레깅스
+  ARMOR_TORSO: 흉갑
+  ARMOR_HEAD: 투구
+  WEAPON: 무기
+  TOOL: 도구
+  BOW: 활
+  FISHING_ROD: 낚싯대
+  BREAKABLE: 내구도
+  WEARABLE: 착용 가능
+  TRIDENT: 삼지창
+  CROSSBOW: 쇠뇌
+  VANISHABLE: 소멸 가능
+
+DistributionWay:
+  ENCHANTING: 인챈트 테이블
+  VILLAGER: 주민 거래
+  LOOT_GENERATION: 전리품 상자
+  FISHING: 낚시
+  MOB_EQUIPMENT: 몹 장비
+
+Rarity:
+  COMMON: <white>일반</white>
+  UNCOMMON: <light_green>고급</light_green>
+  RARE: <purple>희귀</purple>
+  VERY_RARE: <red>전설</red>

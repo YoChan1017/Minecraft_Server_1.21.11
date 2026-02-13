@@ -1,0 +1,153 @@
+Command:
+  Help:
+    List:
+      - <noprefix>
+      - '  <yellow><b>%name%</b></yellow><gray> - </gray><yellow><b>명령어:</b></yellow>'
+      - ' '
+      - <gray>  <red><b><></b></red> - 필수, <green><b>[]</b></green> - 선택.</gray>
+      - ' '
+      - '%entry%'
+      - ' '
+    Entry: '  <yellow>/%command_label%</yellow> <orange>%command_usage%</orange><gray> - %command_description%</gray>'
+    Desc: 도움말 페이지를 표시합니다.
+  CheckPerm:
+    Desc: 플레이어 권한 정보를 출력합니다.
+    Usage: <player>
+  Reload:
+    Desc: 플러그인을 다시 로드합니다.
+    Done: 플러그인이 <green>다시 로드되었습니다</green>!
+  DumpItem:
+    Desc: 아이템 NBT 정보를 출력합니다.
+  EconomyBridge:
+    Name: 이코노미 브릿지
+    Desc: 이코노미 브릿지 관련 명령어입니다.
+    FromItem:
+      Desc: 아이템 기반 통화를 생성합니다.
+      Nothing: <red>아이템을 손에 들고 있어야 합니다!</red>
+      Exists: <red>해당 이름의 통화가 이미 존재합니다!</red>
+      Created: <gray><yellow>%currency_name%</yellow> 통화가 <yellow>%currency_id%</yellow>(으)로 생성되었습니다.</gray>
+  Argument:
+    Type:
+      Required: <lred><%name%></lred>
+      Optional: <lyellow>[%name%]</lyellow>
+    Name:
+      Generic: 값
+      Type: 유형
+      Name: 이름
+      Player: 플레이어
+      World: 월드
+      Amount: 수량
+      Material: 재료
+      ItemMaterial: 아이템 유형
+      BlockMaterial: 블록 유형
+      Enchantment: 인챈트
+  Flag:
+    Format: <lgray>[%name%]</lgray>
+Time:
+  Day: '%amount%일'
+  Hour: '%amount%시간'
+  Min: '%amount%분'
+  Sec: '%amount%초'
+  Delimiter: ' '
+Other:
+  'Yes': <green>예</green>
+  'No': <red>아니요</red>
+  Enabled: <green>활성화됨</green>
+  Disabled: <red>비활성화됨</red>
+  Any: 아무거나
+  None: 없음
+  Never: 절대
+  OneTimed: 일회성
+  Unlimited: 무제한
+  Infinity: ∞
+Error:
+  Invalid_Player: <red>플레이어를 찾을 수 없습니다.</red>
+  Invalid_World: <red>유효하지 않은 월드입니다.</red>
+  Invalid_Number: <red>%value%은(는) 유효한 숫자가 아닙니다.</red>
+  NoPermission: <red>권한이 없습니다!</red>
+  Command:
+    NotYourself: <red>이 명령어는 자신에게 사용할 수 없습니다.</red>
+    PlayerOnly: <red>이 명령어는 플레이어만 사용할 수 있습니다.</red>
+    Usage:
+      - <noprefix>
+      - '<red>오류: </red><gray>잘못된 인수입니다!</gray>'
+      - '<red>사용법: </red><yellow>/%command_label%</yellow> <orange>%command_usage%</orange>'
+      - ' '
+    ParseFlag: <lgray><lred>%name%</lred> 플래그에 대한 잘못된 값: <lred>%value%</lred>.</lgray>
+    ParseArgument: <lgray><lred>%name%</lred> 인수에 대한 잘못된 값: <lred>%value%</lred>.</lgray>
+    Argument:
+      InvalidPlayer: <lgray>플레이어 <lred>%value%</lred>님을 찾을 수 없습니다!</lgray>
+      InvalidWorld: <lgray>월드 <lred>%value%</lred>을(를) 찾을 수 없습니다!</lgray>
+      InvalidNumber: <lgray><lred>%value%</lred>은(는) 유효한 숫자가 아닙니다!</lgray>
+      InvalidMaterial: <lgray><lred>%value%</lred>은(는) 유효한 재료가 아닙니다!</lgray>
+      InvalidEnchantment: <lgray><lred>%value%</lred>은(는) 유효한 인챈트가 아닙니다!</lgray>
+  InvalidMaterial: <red>잘못된 재료입니다!</red>
+  InvalidEnchantment: <red>잘못된 인챈트입니다!</red>
+Editor:
+  Action:
+    Exit:
+      - <noprefix>
+      - <gray>입력 모드를 종료하려면 <click:run_command:'/#exit'><hover:show_text:'<gray>클릭하여 취소</gray>'><green>[여기]</green></hover></click>를 클릭하세요.</gray>
+      - ' '
+  Input:
+    Header:
+      Main: <green><b>입력 모드</b></green>
+      Error: <red><b>오류</b></red>
+    Error:
+      NotInteger: <gray><red>정수</red>여야 합니다!</gray>
+      Generic: <gray>잘못된 값입니다!</gray>
+  Button:
+    Name: <lyellow><b>%name%</b></lyellow>
+    Description: <gray>%entry%</gray>
+    Current:
+      DefaultName: 현재
+      Info: '<lyellow>➥ <gray>%name%: </gray>%value%</lyellow>'
+    ClickKey: <lyellow>→ <u>%value% (으)로 %name%</u></lyellow>
+  Generic:
+    Close:
+      Name: <red>(✕) 닫기</red>
+      Lore: []
+    Return:
+      Name: <gray>(←) </gray><white>돌아가기</white>
+      Lore: []
+    NextPage:
+      Name: <white>다음 페이지</white><gray> (→)</gray>
+      Lore: []
+    PreviousPage:
+      Name: <gray>(←) </gray><white>이전 페이지</white>
+      Lore: []
+  Item:
+    Exit:
+      Name: <lred><u>종료</u></lred>
+      Description: []
+      Formatted: false
+    Return:
+      Name: <white><u>돌아가기</u></white>
+      Description: []
+      Formatted: false
+    NextPage:
+      Name: <lyellow><u>다음 페이지</u> →</lyellow>
+      Description: []
+      Formatted: false
+    PreviousPage:
+      Name: <lyellow>← <u>이전 페이지</u></lyellow>
+      Description: []
+      Formatted: false
+Dialog:
+  Header: <lyellow>%time%</lyellow>
+  DefaultPrompt: <lgray><lgreen>[값]</lgreen>을(를) 입력하세요</lgray>
+  Info:
+    Exit:
+    - <noprefix>
+    - ''
+    - <gray>입력 모드를 종료하려면 <click:run_command:"/#exit"><hover:show_text:"<gray>클릭하여 취소</gray>"><green>[여기]</green></hover></click>를 클릭하세요.</gray>
+Number:
+  Thousand: 천
+  Million: 백만
+  Billion: 십억
+  Trillion: 조
+  Quadrillion: 천조
+Entry:
+  Good: <green>✔</green> <gray>%entry%</gray>
+  Bad: <red>✘</red> <gray>%entry%</gray>
+  Warn: <orange>[❗]</orange> <gray>%entry%</gray>
