@@ -2,10 +2,10 @@
 totemworld: world
 
 # Have players that fall into the void teleport to specific coordinates.
-useSetLocation: false
+useSetLocation: true
 
 # X Y and Z coordinates for set teleport location
-spawnX: 0.5
-spawnY: 100
-spawnZ: 0.5
+spawnX: 0
+spawnY: 300
+spawnZ: 0
 spawnR: 0
